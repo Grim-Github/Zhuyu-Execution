@@ -1,14 +1,15 @@
 # Twitch Chat Execution Simulator
 
 ## Description
-This is a text-based game that simulates the process of executing Twitch chatters. The game is designed to be a parody of Twitch chat and its often chaotic, nonsensical nature. Players take on the role of a moderator who must decide the fate of various chatters based on their actions.
+This is a first person shooter game that simulates the process of executing Twitch chatters. The game is designed to be a parody of Quin69's Twitch chat and its often chaotic, nonsensical nature. Players take on the role of a moderator named Zhuyu who must decide the fate of various chatters based on their actions.
 
 ## Features
-- Randomly generated chatters with unique usernames and messages
+- Chatters are spawned from the twitch chat.
 - Multiple execution methods, including banning, timing out, and permanently banning
-- A variety of execution scenarios, such as spamming, trolling, and inappropriate behavior
+- A variety of execution acts, such as spamming, trolling, and inappropriate behavior
 - A scoring system that rewards players for making fair and just decisions
 - A leaderboard to track the top moderators
+- Quin69 inspired memes
 
 ## How to Play
 1. Download Game
