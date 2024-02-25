@@ -132,7 +132,14 @@ public class Pepe : MonoBehaviour
 
                     if (cycles > cyclesToDespawn)
                     {
-                        { Destroy(gameObject); }
+                        { 
+                            if(isBad)
+                            {
+                                gameManager.LoseGame();
+                            }
+
+                            Destroy(gameObject);
+                        }
                     }
 
 
@@ -169,6 +176,11 @@ public class Pepe : MonoBehaviour
 
     public void Death()
     {
+        if(!isBad)
+        {
+            gameManager.LoseGame();
+        }
+
         Asource.PlayOneShot(deathSounds[Random.Range(0, deathSounds.Length)]);
         agent.enabled = false;
         Destroy(gameObject, 5);

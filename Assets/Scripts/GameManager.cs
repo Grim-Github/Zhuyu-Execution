@@ -6,8 +6,14 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] public TextMeshProUGUI nameText, messageText;
+    [SerializeField] private AudioClip loseSound;
     public float textUpTime = 1;
 
+
+    public void LoseGame()
+    {
+        GetComponent<AudioSource>().PlayOneShot(loseSound);
+    }
 
     public void DisableTexts()
     {
