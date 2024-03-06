@@ -7,7 +7,9 @@ public class Shooting : MonoBehaviour
     [Header("Components")]
     [SerializeField] private GameObject[] blooddecalPrefab;
     [SerializeField] private GameObject bulletHolePrefab;
+    [SerializeField] private ParticleSystem muzzleFlash;
     [SerializeField] private GameObject bloodPrefab;
+    [SerializeField] private Animator sniperAnimator;
     [SerializeField] private GameObject bulletTravel;
 
     [Header("Audio")]
@@ -91,6 +93,8 @@ public class Shooting : MonoBehaviour
         GetComponent<FirstPersonCameraRotation>().enableScope = false;
         audioS.PlayOneShot(clip);
         remainingshootingRate = shootingRate;
+        sniperAnimator.SetTrigger("reload");
+        muzzleFlash.Play();
 
         GameObject bullet = Instantiate(bulletTravel, transform.position, Quaternion.identity);
         bullet.GetComponent<TravelTowards>().destination = hit.point;

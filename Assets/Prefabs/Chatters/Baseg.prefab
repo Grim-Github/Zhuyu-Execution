@@ -246,12 +246,12 @@ MonoBehaviour:
   freakedOutParticle: {fileID: 4258650411492484240, guid: 63d3d593890280b4ea936d2b1b603c73,
     type: 3}
   isBad: 0
-  cyclesToDespawn: 5
+  cyclesToDespawn: 2
   cycles: 0
   center: {x: 0.81, y: 0.27, z: 0.5}
   size: {x: 12.5, y: 1.29, z: 23.6}
   agent: {fileID: 0}
-  stopTime: 2
+  stopTime: 1
 --- !u!136 &6868844537124056215
 CapsuleCollider:
   m_ObjectHideFlags: 0

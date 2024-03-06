@@ -62,14 +62,12 @@ public class FirstPersonCameraRotation : MonoBehaviour
         if (enableScope)
         {
             scope.SetActive(true);
-            rifle.SetActive(false);
             Camera.main.fieldOfView = Mathf.Lerp(Camera.main.fieldOfView, defaultFOV / 4, Time.deltaTime * 3);
             sensitivity = defaultSens / 4;
         }
         else
         {
             scope.SetActive(false);
-            rifle.SetActive(true);
             Camera.main.fieldOfView = Mathf.Lerp(Camera.main.fieldOfView, defaultFOV, Time.deltaTime * 3);
             sensitivity = defaultSens;
         }
